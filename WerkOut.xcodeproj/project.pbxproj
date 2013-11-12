@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D855D29C18320EB000F0D196 /* BJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D855D29B18320EB000F0D196 /* BJViewController.m */; };
+		D855D29D18320EB000F0D196 /* BJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D855D29B18320EB000F0D196 /* BJViewController.m */; };
 		D8F3E6211831F142001A32EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F3E6201831F142001A32EF /* Cocoa.framework */; };
 		D8F3E62B1831F142001A32EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8F3E6291831F142001A32EF /* InfoPlist.strings */; };
 		D8F3E62D1831F142001A32EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F3E62C1831F142001A32EF /* main.m */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D855D29A18320EB000F0D196 /* BJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJViewController.h; sourceTree = "<group>"; };
+		D855D29B18320EB000F0D196 /* BJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJViewController.m; sourceTree = "<group>"; };
 		D8F3E61D1831F142001A32EF /* WerkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WerkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F3E6201831F142001A32EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8F3E6231831F142001A32EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,8 @@
 				D8F3E6351831F142001A32EF /* MainMenu.xib */,
 				D8F3E6381831F142001A32EF /* Images.xcassets */,
 				D8F3E6271831F142001A32EF /* Supporting Files */,
+				D855D29A18320EB000F0D196 /* BJViewController.h */,
+				D855D29B18320EB000F0D196 /* BJViewController.m */,
 			);
 			path = WerkOut;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D855D29C18320EB000F0D196 /* BJViewController.m in Sources */,
 				D8F3E6341831F142001A32EF /* BJAppDelegate.m in Sources */,
 				D8F3E62D1831F142001A32EF /* main.m in Sources */,
 			);
@@ -262,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D855D29D18320EB000F0D196 /* BJViewController.m in Sources */,
 				D8F3E64B1831F142001A32EF /* WerkOutTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +473,7 @@
 				D8F3E6501831F142001A32EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F3E6511831F142001A32EF /* Build configuration list for PBXNativeTarget "WerkOutTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +482,7 @@
 				D8F3E6531831F142001A32EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
