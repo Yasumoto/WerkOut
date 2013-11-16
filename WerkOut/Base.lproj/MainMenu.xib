@@ -736,9 +736,13 @@
                     </textField>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="menu" destination="29" id="eW5-4t-sty"/>
+            </connections>
         </window>
         <customObject id="494" customClass="BJAppDelegate">
             <connections>
+                <outlet property="controller" destination="QDC-gU-Nwp" id="bKf-Tl-kHz"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>

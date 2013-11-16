@@ -20,6 +20,8 @@
     if (self) {
         // Initialization code here.
     }
+  
+    NSLog(@"%@", self.view);
     return self;
 }
 
