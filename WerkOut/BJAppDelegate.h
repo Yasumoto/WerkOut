@@ -7,11 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "BJViewController.h"
 
 @interface BJAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) IBOutlet NSTextField *TreadmillMinutesTextField;
+@property (weak) IBOutlet NSTextField *CrunchesTextField;
+@property (weak) IBOutlet NSDatePicker *WorkoutDatePicker;
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet BJViewController *controller;
+
+- (IBAction)takeIntValueForTreadmillFrom:(id)sender;
+- (IBAction)takeCrunchesFrom:(id)sender;
+- (IBAction)takeWorkoutIntensityFrom:(id)sender;
 
 @end

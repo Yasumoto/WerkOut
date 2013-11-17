@@ -15,4 +15,15 @@
   NSLog(@"We starting!!!");
 }
 
+- (IBAction)takeIntValueForTreadmillFrom:(id)sender {
+    NSLog(@"Tradmill minutes!");
+}
+
+- (IBAction)takeCrunchesFrom:(id)sender {
+    NSLog(@"Crunches!");
+}
+
+- (IBAction)takeWorkoutIntensityFrom:(id)sender {
+    NSLog(@"Intensity!");
+}
 @end

@@ -265,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D855D29C18320EB000F0D196 /* BJViewController.m in Sources */,
 				D8F3E6341831F142001A32EF /* BJAppDelegate.m in Sources */,
 				D899DB9A18387BA6000BFCEC /* BJWerkData.m in Sources */,
 				D8F3E62D1831F142001A32EF /* main.m in Sources */,
@@ -276,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D855D29D18320EB000F0D196 /* BJViewController.m in Sources */,
 				D8F3E64B1831F142001A32EF /* WerkOutTests.m in Sources */,
 				D899DB9B18387BA6000BFCEC /* BJWerkData.m in Sources */,
 			);
