@@ -7,23 +7,28 @@
 //
 
 #import "BJAppDelegate.h"
+#import "BJWerkData.h"
 
 @implementation BJAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  NSLog(@"We starting!!!");
+  BJWerkData *werk = [[BJWerkData alloc] init];
+  self.werk = werk;
 }
 
-- (IBAction)takeIntValueForTreadmillFrom:(id)sender {
-    NSLog(@"Tradmill minutes!");
+- (IBAction)takeIntValueForTreadmillFrom:(NSTextField *)sender {
+  self.werk.treadmill = [sender intValue];
 }
 
-- (IBAction)takeCrunchesFrom:(id)sender {
-    NSLog(@"Crunches!");
+- (IBAction)takeCrunchesFrom:(NSTextField *)sender {
+  self.werk.crunches = [sender intValue];
 }
 
-- (IBAction)takeWorkoutIntensityFrom:(id)sender {
-    NSLog(@"Intensity!");
+- (IBAction)takeWorkoutIntensityFrom:(NSSlider *)sender {
+  self.werk.intensity = [sender intValue];
+}
+
+- (IBAction)changeDate:(NSDatePicker *)sender {
 }
 @end

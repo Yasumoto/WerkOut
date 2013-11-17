@@ -655,7 +655,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -716,6 +716,9 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         </datePickerCell>
+                        <connections>
+                            <action selector="changeDate:" target="494" id="pmS-ET-QKS"/>
+                        </connections>
                     </datePicker>
                     <slider identifier="IntensitySlider" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2m-D2-E2X">
                         <rect key="frame" x="18" y="58" width="444" height="21"/>
@@ -751,11 +754,12 @@
         </window>
         <customObject id="494" customClass="BJAppDelegate">
             <connections>
-                <outlet property="CrunchesTextField" destination="Lsf-I2-q8N" id="cz6-pb-Liy"/>
-                <outlet property="TreadmillMinutesTextField" destination="k1Z-cE-yNH" id="bZf-cf-6qX"/>
-                <outlet property="WorkoutDatePicker" destination="dnE-g2-lZG" id="37y-IA-Xau"/>
                 <outlet property="controller" destination="QDC-gU-Nwp" id="bKf-Tl-kHz"/>
+                <outlet property="crunchesTextField" destination="Lsf-I2-q8N" id="FoV-NJ-sc6"/>
+                <outlet property="intensitySlider" destination="Z2m-D2-E2X" id="KF1-l5-iqZ"/>
+                <outlet property="treadmillTextField" destination="k1Z-cE-yNH" id="hIh-wp-IMf"/>
                 <outlet property="window" destination="371" id="532"/>
+                <outlet property="workoutDatePicker" destination="dnE-g2-lZG" id="V24-cg-wA2"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>

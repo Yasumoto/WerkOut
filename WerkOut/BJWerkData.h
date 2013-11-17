@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class BJWerkOut;
+
 @interface BJWerkData : NSObject
-@property (assign) int intensity;
-@property (assign) int crunches;
-@property (assign) int treadmill;
+
+- (void)setWerkout:(BJWerkOut *)werkout forDate:(NSDate *)date;
+- (BJWerkOut *)werkOutForDate:(NSDate *)date;
+
 @end

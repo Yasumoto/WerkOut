@@ -8,15 +8,20 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class BJWerkData;
+
 @interface BJAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) IBOutlet NSTextField *TreadmillMinutesTextField;
-@property (weak) IBOutlet NSTextField *CrunchesTextField;
-@property (weak) IBOutlet NSDatePicker *WorkoutDatePicker;
+@property (weak) IBOutlet NSTextField *treadmillTextField;
+@property (weak) IBOutlet NSTextField *crunchesTextField;
+@property (weak) IBOutlet NSDatePicker *workoutDatePicker;
+@property (weak) IBOutlet NSSlider *intensitySlider;
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) BJWerkData *werk;
 
-- (IBAction)takeIntValueForTreadmillFrom:(id)sender;
-- (IBAction)takeCrunchesFrom:(id)sender;
-- (IBAction)takeWorkoutIntensityFrom:(id)sender;
+- (IBAction)takeIntValueForTreadmillFrom:(NSTextField *)sender;
+- (IBAction)takeCrunchesFrom:(NSTextField *)sender;
+- (IBAction)takeWorkoutIntensityFrom:(NSSlider *)sender;
+- (IBAction)changeDate:(NSDatePicker *)sender;
 
 @end
