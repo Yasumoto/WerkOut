@@ -10,7 +10,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <viewController nibName="MainMenu" id="QDC-gU-Nwp" customClass="BJViewController">
+        <viewController nibName="MainMenu" id="QDC-gU-Nwp">
             <connections>
                 <outlet property="view" destination="372" id="tHn-WW-RIn"/>
             </connections>
@@ -770,6 +770,5 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <viewController id="ue0-H1-Ysa"/>
     </objects>
 </document>

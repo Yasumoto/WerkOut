@@ -36,8 +36,6 @@
 }
 
 - (IBAction)updateWorkoutIntensity:(NSSlider *)sender {
-  NSLog(@"Setting value to: %d", sender.intValue);
-  NSLog(@"From: %@", self.intensityText.stringValue);
   [self.intensityText setStringValue:[NSString stringWithFormat:@"%d", sender.intValue]];
 }
 
