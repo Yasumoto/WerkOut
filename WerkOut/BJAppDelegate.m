@@ -31,6 +31,7 @@
   werkout.intensity = self.intensitySlider.intValue;
   werkout.crunches = self.crunchesTextField.intValue;
   werkout.treadmill = self.treadmillTextField.intValue;
+  werkout.date = self.workoutDatePicker.dateValue;
   [self.werk setWerkout:werkout forDate:[self.workoutDatePicker dateValue]];
 }
 
@@ -41,5 +42,10 @@
 }
 
 - (void)updateViewWithWerkData:(BJWerkOut *)werkout {
+  self.workoutDatePicker.dateValue = werkout.date;
+  self.intensitySlider.intValue = werkout.intensity;
+  self.intensityText.intValue = werkout.intensity;
+  self.crunchesTextField.intValue = werkout.crunches;
+  self.treadmillTextField.intValue = werkout.treadmill;
 }
 @end

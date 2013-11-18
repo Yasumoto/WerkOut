@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface BJWerkOut : NSObject
+@property (nonatomic, assign) NSDate *date;
 @property (nonatomic, assign) int intensity;
 @property (nonatomic, assign) int crunches;
 @property (nonatomic, assign) int treadmill;
