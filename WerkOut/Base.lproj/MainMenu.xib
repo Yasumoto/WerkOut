@@ -654,14 +654,14 @@
         <window title="WerkOut" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="222"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="222"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-4J-CCB">
-                        <rect key="frame" x="18" y="272" width="161" height="17"/>
+                        <rect key="frame" x="18" y="134" width="161" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minutes on the Treadmill" id="K1A-SY-hxe">
                             <font key="font" metaFont="system"/>
@@ -670,19 +670,16 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1Z-cE-yNH">
-                        <rect key="frame" x="279" y="272" width="181" height="22"/>
+                        <rect key="frame" x="279" y="134" width="181" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="Minutes" placeholderString="0" drawsBackground="YES" id="bBj-1h-Z0I">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="takeIntValueForTreadmillFrom:" target="494" id="fl0-4M-KFa"/>
-                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-hD-gN9">
-                        <rect key="frame" x="18" y="164" width="63" height="17"/>
+                        <rect key="frame" x="18" y="94" width="63" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Crunches" id="rB1-DT-SQA">
                             <font key="font" metaFont="system"/>
@@ -691,19 +688,16 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-I2-q8N">
-                        <rect key="frame" x="279" y="164" width="181" height="22"/>
+                        <rect key="frame" x="279" y="89" width="181" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="Crunches" drawsBackground="YES" id="bd7-IG-HH9">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="takeCrunchesFrom:" target="494" id="Lqe-2E-Yaz"/>
-                        </connections>
                     </textField>
                     <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dnE-g2-lZG">
-                        <rect key="frame" x="190" y="318" width="104" height="27"/>
+                        <rect key="frame" x="190" y="180" width="104" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="CSG-5B-oOE">
                             <font key="font" metaFont="system"/>
@@ -721,15 +715,15 @@
                         </connections>
                     </datePicker>
                     <slider identifier="IntensitySlider" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2m-D2-E2X">
-                        <rect key="frame" x="18" y="58" width="444" height="21"/>
+                        <rect key="frame" x="80" y="62" width="320" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="10" doubleValue="5" tickMarkPosition="above" sliderType="linear" id="JWD-FF-EIX"/>
                         <connections>
-                            <action selector="takeWorkoutIntensityFrom:" target="494" id="JaI-3s-lxt"/>
+                            <action selector="updateWorkoutIntensity:" target="494" id="Afq-re-bsm"/>
                         </connections>
                     </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYj-z6-fRY">
-                        <rect key="frame" x="211" y="20" width="58" height="17"/>
+                        <rect key="frame" x="18" y="64" width="58" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Intensity" id="ihH-8J-zXS">
                             <font key="font" metaFont="system"/>
@@ -737,10 +731,21 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sk-IQ-tYr">
-                        <rect key="frame" x="234" y="100" width="13" height="17"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eG7-NG-t46">
+                        <rect key="frame" x="198" y="16" width="85" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5" id="tqm-Ut-okZ">
+                        <buttonCell key="cell" type="push" title="Submit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hLa-Rq-OBu">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="submitWorkout:" target="494" id="NRR-qt-NmE"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0uo-i6-cnq">
+                        <rect key="frame" x="441" y="64" width="13" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5" id="BFV-xp-umn">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -757,6 +762,8 @@
                 <outlet property="controller" destination="QDC-gU-Nwp" id="bKf-Tl-kHz"/>
                 <outlet property="crunchesTextField" destination="Lsf-I2-q8N" id="FoV-NJ-sc6"/>
                 <outlet property="intensitySlider" destination="Z2m-D2-E2X" id="KF1-l5-iqZ"/>
+                <outlet property="intensityText" destination="0uo-i6-cnq" id="lXA-2s-frO"/>
+                <outlet property="submitButton" destination="eG7-NG-t46" id="EWE-PX-jff"/>
                 <outlet property="treadmillTextField" destination="k1Z-cE-yNH" id="hIh-wp-IMf"/>
                 <outlet property="window" destination="371" id="532"/>
                 <outlet property="workoutDatePicker" destination="dnE-g2-lZG" id="V24-cg-wA2"/>

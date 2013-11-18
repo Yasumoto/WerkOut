@@ -24,6 +24,7 @@
 }
 
 - (void)setWerkout:(BJWerkOut *)werkout forDate:(NSDate *)date {
+  NSLog(@"On date: %@- Intensity: %d, minutes: %d, crunches: %d", date, werkout.intensity, werkout.treadmill, werkout.crunches);
   [self.werkouts setValue:werkout forKey:[date description]];
 }
 

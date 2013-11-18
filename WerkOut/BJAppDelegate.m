@@ -8,6 +8,11 @@
 
 #import "BJAppDelegate.h"
 #import "BJWerkData.h"
+#import "BJWerkOut.h"
+
+@interface BJAppDelegate ()
+- (void)updateViewWithWerkData:(BJWerkOut *)werkout;
+@end
 
 @implementation BJAppDelegate
 
@@ -17,18 +22,24 @@
   self.werk = werk;
 }
 
-- (IBAction)takeIntValueForTreadmillFrom:(NSTextField *)sender {
-  self.werk.treadmill = [sender intValue];
-}
-
-- (IBAction)takeCrunchesFrom:(NSTextField *)sender {
-  self.werk.crunches = [sender intValue];
-}
-
-- (IBAction)takeWorkoutIntensityFrom:(NSSlider *)sender {
-  self.werk.intensity = [sender intValue];
-}
-
 - (IBAction)changeDate:(NSDatePicker *)sender {
+  [self updateViewWithWerkData:[self.werk werkOutForDate:[sender dateValue]]];
+}
+
+- (IBAction)submitWorkout:(NSButton *)sender {
+  BJWerkOut *werkout = [[BJWerkOut alloc] init];
+  werkout.intensity = self.intensitySlider.intValue;
+  werkout.crunches = self.crunchesTextField.intValue;
+  werkout.treadmill = self.treadmillTextField.intValue;
+  [self.werk setWerkout:werkout forDate:[self.workoutDatePicker dateValue]];
+}
+
+- (IBAction)updateWorkoutIntensity:(NSSlider *)sender {
+  NSLog(@"Setting value to: %d", sender.intValue);
+  NSLog(@"From: %@", self.intensityText.stringValue);
+  [self.intensityText setStringValue:[NSString stringWithFormat:@"%d", sender.intValue]];
+}
+
+- (void)updateViewWithWerkData:(BJWerkOut *)werkout {
 }
 @end
